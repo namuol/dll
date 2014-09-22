@@ -78,13 +78,6 @@
       return !((node == null) || node.free === true);
     };
 
-
-    /**
-    Removes an item from the list
-    @param obj The object to remove
-    @returns boolean true if the item was removed, false if the item was not on the list
-     */
-
     LinkedList.prototype.remove = function(obj) {
       var node, _ref, _ref1;
       node = this._getNode(obj);
@@ -109,11 +102,6 @@
       this.length--;
       return obj;
     };
-
-
-    /**
-    Clears the list out
-     */
 
     LinkedList.prototype.clear = function() {
       var next;

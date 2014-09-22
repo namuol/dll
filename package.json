@@ -1,6 +1,6 @@
 {
   "name": "dll",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "a lightweight, fast & flexible doubly linked list",
   "main": "index.js",
   "scripts": {

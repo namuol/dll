@@ -56,11 +56,6 @@ class LinkedList
     node = @_getNode(obj)
     not (not node? or node.free is true)
   
-  ###*
-  Removes an item from the list
-  @param obj The object to remove
-  @returns boolean true if the item was removed, false if the item was not on the list
-  ###
   remove: (obj) ->
     node = @_getNode(obj)
     return false  if (not node?) or node.free # trying to remove something not there
@@ -79,10 +74,7 @@ class LinkedList
     node.next = null
     @length--
     return obj
-  
-  ###*
-  Clears the list out
-  ###
+
   clear: ->
     # sweep the list and free all the nodes
     next = @first
