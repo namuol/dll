@@ -99,11 +99,11 @@ describe 'linked lists', (it) ->
     t.equal list.add(obj), obj
     t.end()
 
-  it 'returns false when add(obj) is called and obj is already part of the list', (t) ->
+  it 'returns obj when add(obj) is called and obj is already part of the list', (t) ->
     list = new LinkedList
     obj = newObj()
     list.add obj
-    t.equal list.add(obj), false
+    t.equal list.add(obj), obj
     t.end()
 
   it 'returns obj when remove(obj) is called and obj is part of the list', (t) ->
