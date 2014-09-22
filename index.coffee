@@ -50,7 +50,7 @@ class LinkedList
       @last = node # new object to add becomes last in the list
       node.next = null # just in case this was previously set
     @length++
-    return true
+    return obj
 
   contains: (obj) ->
     node = @_getNode(obj)
@@ -78,7 +78,7 @@ class LinkedList
     node.prev = null
     node.next = null
     @length--
-    return true
+    return obj
   
   ###*
   Clears the list out

@@ -69,7 +69,7 @@
         node.next = null;
       }
       this.length++;
-      return true;
+      return obj;
     };
 
     LinkedList.prototype.contains = function(obj) {
@@ -107,7 +107,7 @@
       node.prev = null;
       node.next = null;
       this.length--;
-      return true;
+      return obj;
     };
 
 
