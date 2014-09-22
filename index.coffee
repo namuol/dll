@@ -27,7 +27,7 @@ class LinkedList
       node.free = false
       @objMap[obj[idPropertyName]] = node
     else
-      return false  if not node.free
+      return obj  if not node.free
 
       node.obj = obj
       node.free = false

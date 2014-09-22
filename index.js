@@ -47,7 +47,7 @@
         this.objMap[obj[idPropertyName]] = node;
       } else {
         if (!node.free) {
-          return false;
+          return obj;
         }
         node.obj = obj;
         node.free = false;

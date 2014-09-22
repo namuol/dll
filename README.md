@@ -61,11 +61,106 @@ list.clear();
 console.log(list.length); // "0"
 ```
 
-## Caveats
+### Caveats
 
 - Only objects are supported. No primitives.
 - Objects must have a unique ID property (default is `_id`, but it can be changed with [`dll.config.idPropertyName`](#api-config-idPropertyName)).
 - Duplicate items are not supported.
+
+### API
+
+```js
+var LinkedList = require('dll');
+```
+
+<a name='api-config-idPropertyName'></a>
+#### LinkedList.config.idPropertyName
+
+*Type:* **String** *Default: `"_id"`*
+
+The name of the property used to uniquely identify objects.
+
+You are required to have a unique ID property on any objects that
+are added to a linked list, but you can call it whatever you want by
+changing the string value of this property.
+
+<a name='api-new'></a>
+#### new LinkedList()
+
+Create a new linked list.
+
+<a name='api-first'></a>
+#### list.first
+
+*Type:* [**Node**](#api-node)
+
+The first node in the list.
+
+If the list is empty, `list.first` will be `null`.
+
+<a name='api-last'></a>
+#### list.last
+
+*Type:* [**Node**](#api-node)
+
+The last node in the list.
+
+If the list is empty, `list.last` will be `null`.
+
+<a name='api-length'></a>
+#### list.length
+
+The number of objects in the list.
+
+<a name='api-add'></a>
+#### list.add(obj)
+
+Add an object to a list. If a list already contains the object,
+this will have no effect on the list.
+
+**Always returns `obj`**
+
+<a name='api-remove'></a>
+#### list.remove(obj)
+
+Remove an object from the list.
+
+**Returns `obj` if the object was removed, `false` if it was not part of the list**
+
+<a name='api-clear'></a>
+#### list.clear(obj)
+
+Removes all objects from the list and sets its length to zero.
+
+<a name='api-node'></a>
+#### Node
+
+A container representing a location within the list.
+
+<a name='api-node-obj'></a>
+#### Node.obj
+
+*Type:* **Object**
+
+The object that is at this location in the list.
+
+<a name='api-node-next'></a>
+#### Node.next
+
+*Type:* [**Node**](#api-node)
+
+The node that follows this node.
+
+If this is the last node in the list, `next` will be `null`.
+
+<a name='api-node-prev'></a>
+#### Node.prev
+
+*Type:* [**Node**](#api-node)
+
+The node that precedes this node.
+
+If this is the first node in the list, `prev` will be `null`.
 
 ## License
 

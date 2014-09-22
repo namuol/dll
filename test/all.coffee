@@ -93,27 +93,27 @@ describe 'linked lists', (it) ->
     t.false list.contains obj2
     t.end()
 
-  it 'returns obj when add(obj) is called and obj is not part of the list', (t) ->
+  it 'return obj when add(obj) is called and obj is not part of the list', (t) ->
     list = new LinkedList
     obj = newObj()
     t.equal list.add(obj), obj
     t.end()
 
-  it 'returns false when add(obj) is called and obj is already part of the list', (t) ->
+  it 'return obj when add(obj) is called and obj is already part of the list', (t) ->
     list = new LinkedList
     obj = newObj()
     list.add obj
-    t.equal list.add(obj), false
+    t.equal list.add(obj), obj
     t.end()
 
-  it 'returns obj when remove(obj) is called and obj is part of the list', (t) ->
+  it 'return obj when remove(obj) is called and obj is part of the list', (t) ->
     list = new LinkedList
     obj = newObj()
     list.add obj
     t.equal list.remove(obj), obj
     t.end()
 
-  it 'returns false when remove(obj) is called and obj is not part of the list', (t) ->
+  it 'return false when remove(obj) is called and obj is not part of the list', (t) ->
     list = new LinkedList
     obj = newObj()
     t.equal list.remove(obj), false
