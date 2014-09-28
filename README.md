@@ -171,3 +171,7 @@ Apache 2.0
 ```bash
 npm install dll --save
 ```
+
+----
+
+[![Analytics](https://ga-beacon.appspot.com/UA-33247419-2/dll/README.md)](https://github.com/igrigorik/ga-beacon)
