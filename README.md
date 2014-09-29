@@ -40,6 +40,11 @@ while (itr) {
 //   Sausage
 //   Steak
 
+// Or even easier:
+list.each(function (obj) {
+  console.log (itr.obj.name);
+});
+
 assert( list.contains(entityC) === true );
 
 list.remove(entityC);
@@ -131,6 +136,11 @@ Remove an object from the list.
 #### list.clear(obj)
 
 Removes all objects from the list and sets its length to zero.
+
+<a name='api-each'></a>
+#### list.each(function (obj) {/* ... */})
+
+Call a function for every object in the list.
 
 <a name='api-node'></a>
 #### Node
