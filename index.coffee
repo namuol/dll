@@ -85,6 +85,13 @@ class LinkedList
     @length = 0
     return
 
+  each: (f) ->
+    next = @first
+    while next?
+      f next.obj
+      next = next.next
+    return
+
 idPropertyName = '_id'
 
 LinkedList.config = {}

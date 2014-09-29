@@ -117,4 +117,21 @@ describe 'linked lists', (it) ->
     list = new LinkedList
     obj = newObj()
     t.equal list.remove(obj), false
-    t.end()  
+    t.end()
+
+  it 'should allow you to iterate over the entire list with ".each()"', (t) ->
+    list = new LinkedList
+    objs = []
+    for i in [0..3]
+      obj = newObj()
+      objs.push obj
+      list.add obj
+
+    idx = 0
+    
+    list.each (e) ->
+      t.equal e, objs[idx]
+      idx += 1
+
+    t.end()
+  

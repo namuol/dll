@@ -114,6 +114,15 @@
       this.length = 0;
     };
 
+    LinkedList.prototype.each = function(f) {
+      var next;
+      next = this.first;
+      while (next != null) {
+        f(next.obj);
+        next = next.next;
+      }
+    };
+
     return LinkedList;
 
   })();
