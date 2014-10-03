@@ -1,4 +1,4 @@
-# dll [![Build Status](https://drone.io/github.com/namuol/dll/status.png)](https://drone.io/github.com/namuol/dll/latest) [![devDependency Status](https://david-dm.org/namuol/dll/dev-status.svg?style=flat-square)](https://david-dm.org/namuol/dll#info=devDependencies)
+# dll [![Build Status](https://drone.io/github.com/gitsubio/dll/status.png)](https://drone.io/github.com/gitsubio/dll/latest) [![devDependency Status](https://david-dm.org/gitsubio/dll/dev-status.svg?style=flat-square)](https://david-dm.org/gitsubio/dll#info=devDependencies)
 
 A lightweight, fast & flexible doubly linked list for JavaScript.
 
