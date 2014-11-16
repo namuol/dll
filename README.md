@@ -133,7 +133,7 @@ Remove an object from the list.
 **Returns `obj` if the object was removed, `false` if it was not part of the list**
 
 <a name='api-clear'></a>
-#### list.clear(obj)
+#### list.clear()
 
 Removes all objects from the list and sets its length to zero.
 
